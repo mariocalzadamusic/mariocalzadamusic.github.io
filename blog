@@ -1,0 +1,61 @@
+<!-- blog.html: Blog Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Mario Calzada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Mario Calzada</a>
+    <ul class="nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page blog-page">
+
+  <section class="page-intro">
+    <h1>Blog</h1>
+    <p>Thoughts, research notes, project reflections, and writings on music, improvisation, and contemporary practice.</p>
+  </section>
+
+  <section class="blog-list">
+
+    <!-- Blog Post Preview -->
+    <article class="blog-card">
+      <h2><a href="blog-post-1.html">On Improvisation and Responsibility</a></h2>
+      <p class="blog-meta">March 2025</p>
+      <p class="blog-excerpt">
+        A reflection on improvisation as a social and ethical act, inspired by recent performances and rehearsals.
+      </p>
+    </article>
+
+    <!-- Blog Post Preview -->
+    <article class="blog-card">
+      <h2><a href="blog-post-2.html">The Democratic Orchestra: Process Notes</a></h2>
+      <p class="blog-meta">January 2025</p>
+      <p class="blog-excerpt">
+        Notes from the development of The Democratic Orchestra, between composition, improvisation, and collective authorship.
+      </p>
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mario Calzada</p>
+</footer>
+
+</body>
+</html>
