@@ -149,7 +149,11 @@ header {
 }/* ======================
    BIO PAGE LAYOUT
    ====================== */
-
+.bio-text > * {
+  flex: 1;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
 .bio-content {
   max-width: 900px;
   margin: 40px auto;
