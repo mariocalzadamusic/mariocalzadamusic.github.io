@@ -189,7 +189,7 @@ header {
 }
 
 .bio-image-bottom img {
-  max-width: 560px;
+  max-width: 240px;
   height: auto;
   border-radius: 6px;
 }
