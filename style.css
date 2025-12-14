@@ -179,24 +179,10 @@ header {
   border-radius: 6px;
   margin-top: 60px;
   text-align: center;
+    margin-left: 60px;
+
 }
 
-/* Bottom image */
-.bio-image-bottom {
-   width: 440px;
-    margin-top: 60px;
-  text-align: center;
-   margin-left: 120px;
-}
-
-.bio-image-bottom img {
-  max-width: 440px;
-    .bio-image-right {
-  position: relative;
-  top: -30px;
-  height: auto;
-  border-radius: 6px;
-}
 
 /* Mobile adjustment */
 @media (max-width: 768px) {
