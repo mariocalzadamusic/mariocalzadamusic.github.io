@@ -146,4 +146,56 @@ header {
     .hero-buttons {
         justify-content: center;
     }
+}/* ======================
+   BIO PAGE LAYOUT
+   ====================== */
+
+.bio-content {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.bio-text {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.bio-text p {
+  flex: 1;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Right portrait image */
+.bio-image-right img {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Bottom image */
+.bio-image-bottom {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.bio-image-bottom img {
+  max-width: 560px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .bio-text {
+    flex-direction: column;
+  }
+
+  .bio-image-right img {
+    max-width: 100%;
+  }
 }
