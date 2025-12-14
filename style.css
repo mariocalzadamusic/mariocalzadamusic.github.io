@@ -173,6 +173,8 @@ header {
   max-width: 240px;
   height: auto;
   border-radius: 6px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 /* Bottom image */
