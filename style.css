@@ -174,7 +174,7 @@ header {
 
 /* Right portrait image */
 .bio-image-right img {
-  max-width: 240px;
+  max-width: 340px;
   height: auto;
   border-radius: 6px;
   margin-top: 60px;
@@ -189,7 +189,7 @@ header {
 }
 
 .bio-image-bottom img {
-  max-width: 240px;
+  max-width: 340px;
     margin-top: 60px;
   height: auto;
   border-radius: 6px;
