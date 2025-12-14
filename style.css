@@ -183,9 +183,10 @@ header {
 
 /* Bottom image */
 .bio-image-bottom {
-  margin-top: 60px;
+   width: 440px;
+    margin-top: 60px;
   text-align: center;
-   margin-left: 80px;
+   margin-left: 120px;
 }
 
 .bio-image-bottom img {
