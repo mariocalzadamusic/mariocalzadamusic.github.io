@@ -209,3 +209,84 @@ header {
   color: #777;
   font-size: 1.1rem;
 }
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Hero */
+.projects-hero {
+  margin-bottom: 80px;
+}
+
+.projects-hero h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.projects-intro {
+  max-width: 720px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Category blocks */
+.project-category {
+  margin-bottom: 100px;
+}
+
+.project-category h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Cards */
+.project-card {
+  background: #f3f3f3;
+  padding: 24px;
+  text-decoration: none;
+  color: #111;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Featured projects */
+.project-card.featured {
+  background: #e8e8e8;
+  border-left: 4px solid #111;
+}
