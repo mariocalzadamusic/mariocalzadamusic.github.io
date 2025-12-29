@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colors and Forms — Mario Calzada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="project-hero">
+  <h1>Colors and Forms</h1>
+  <p class="project-subtitle">An open, evolving project on interpretation, form and agency</p>
+</header>
+
+<main class="project-page">
+
+  <!-- Explanation -->
+  <section class="project-intro">
+    <p>
+      <em>Colors and Forms</em> is an ongoing compositional project conceived as a modular score
+      adaptable to different instruments and performers. Each interpretation reflects the
+      performer’s musical identity, decision-making and relationship to form.
+    </p>
+  </section>
+
+  <!-- Score download -->
+  <section class="project-section">
+    <h2>Score</h2>
+    <p>The score is available for performers interested in developing their own interpretation.</p>
+    <a href="assets/scores/colors-and-forms.pdf" class="btn" target="_blank">Download score (PDF)</a>
+  </section>
+
+  <!-- Instruments -->
+  <section class="project-section">
+    <h2>Interpretations</h2>
+
+    <div class="project-grid">
+
+      <a href="colors-and-forms-viola.html" class="project-card">
+        <div class="project-image">
+          <img src="assets/projects/colors-forms-viola.jpg" alt="Colors and Forms — Viola">
+        </div>
+        <div class="project-content">
+          <h3>Viola</h3>
+          <p>Individual interpretation and sound approach</p>
+        </div>
+      </a>
+
+      <!-- Future instruments -->
+      <div class="project-card placeholder">
+        <h3>More instruments coming</h3>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © Mario Calzada
+</footer>
+
+</body>
+</html>
