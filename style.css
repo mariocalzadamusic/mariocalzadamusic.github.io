@@ -293,7 +293,14 @@ header {
 /* =========================
    SINGLE PROJECT PAGE
 ========================= */
-
+.project-image {
+  width: 100%;
+  height: 160px;          /* ← controls card image height */
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  background: #eaeaea;
+}
 .project-hero {
   padding: 100px 20px 60px;
   max-width: 900px;
