@@ -214,11 +214,11 @@ header {
 ========================= */
 
 .projects {
-  max-width: 1100px;   /* or 1200px */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 80px 20px;
 }
-}
+
 main {
   min-height: auto;
   padding-top: 40px;
