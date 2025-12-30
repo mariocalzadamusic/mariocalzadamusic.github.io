@@ -218,7 +218,10 @@ header {
   margin: 0 auto;
   padding: 80px 20px;
 }
-
+main {
+  min-height: auto;
+  padding-top: 40px;
+}
 /* Hero */
 .projects-hero {
   margin-bottom: 80px;
