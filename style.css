@@ -282,7 +282,22 @@ main {
   line-height: 1.5;
   color: #444;
 }
+/* Image wrapper inside cards */
+.project-image {
+  width: 100%;
+  height: 180px;              /* 👈 this is key */
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
 
+/* The image itself */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fills nicely */
+  display: block;
+}
 /* Hover effect */
 .project-card:hover {
   transform: translateY(-6px);
