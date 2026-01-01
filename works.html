@@ -1,4 +1,4 @@
-<!-- works.html: Complete Works Catalogue -->
+<!-- works.html: Complete Works Catalogue (Table Layout) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<!-- Navigation (same as index) -->
-<header class="site-header">
+<!-- Navigation -->
+<header>
   <nav class="navbar">
     <div class="logo"><a href="index.html">Mario Calzada</a></div>
     <ul class="nav-links">
@@ -24,71 +24,93 @@
   </nav>
 </header>
 
-<main class="works">
+<main class="works works-table-layout">
 
-  <!-- Hero -->
-  <section class="works-hero">
-    <h1>Works</h1>
-    <p class="works-intro">
-      A catalogue of selected compositions spanning contemporary music, jazz, large ensembles
-      and solo works. Scores and recordings available upon request unless stated otherwise.
+  <!-- Hero with background image -->
+  <section class="works-hero-bg" style="background-image: url('assets/projects/democratic-orchestra-hero.jpg');">
+    <div class="works-hero-overlay">
+      <h1>Works</h1>
+      <p>
+        Selected compositions by Mario Calzada. Availability, scores and recordings
+        listed for programmers, performers and institutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- TABLE -->
+  <section class="works-table-section">
+
+    <table class="works-table">
+     <thead>
+  <tr>
+    <th>Title</th>
+    <th>Category</th>
+    <th>Year</th>
+    <th>Score</th>
+    <th>Audio</th>
+    <th>Video</th>
+    <th>Preview</th>
+  </tr>
+</thead>
+      <tbody>
+
+      <tr class="featured">
+  <td>The Democratic Orchestra</td>
+  <td>Contemporary / Large Ensemble</td>
+  <td>2024</td>
+  <td>On request</td>
+  <td><a href="democratic-orchestra.html">Demo</a></td>
+  <td><a href="https://youtube.com" target="_blank">YouTube</a></td>
+  <td>
+    <a href="assets/previews/democratic-orchestra-preview.pdf" download class="preview-btn">
+      Download
+    </a>
+  </td>
+</tr>
+
+        <tr>
+          <td>442</td>
+          <td>Contemporary</td>
+          <td>2023</td>
+          <td>Available</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+
+        <tr>
+          <td>The Great Wave</td>
+          <td>Solo Drums</td>
+          <td>2024</td>
+          <td>Available</td>
+          <td><a href="#">Audio</a></td>
+          <td><a href="#">Video</a></td>
+        </tr>
+
+        <tr>
+          <td>Colors and Forms</td>
+          <td>Modular / Ongoing</td>
+          <td>—</td>
+          <td>On request</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+
+        <tr>
+          <td>Itaka</td>
+          <td>Jazz Ensemble</td>
+          <td>2022</td>
+          <td>Available</td>
+          <td>Audio</td>
+          <td>—</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p class="works-note">
+      Scores and complete recordings are available upon request unless otherwise indicated.
     </p>
-  </section>
 
-  <!-- Contemporary Music -->
-  <section class="work-category">
-    <h2>Contemporary Music</h2>
-    <div class="work-list">
-      <div class="work-item featured">
-        <h3>The Democratic Orchestra</h3>
-        <p>Multinational ensemble, collective decision-making and political metaphor.</p>
-      </div>
-      <div class="work-item"><h3>442</h3></div>
-      <div class="work-item"><h3>The Great Wave</h3></div>
-      <div class="work-item"><h3>Ceramique</h3></div>
-      <div class="work-item"><h3>Composer’s Workout</h3></div>
-      <div class="work-item"><h3>Celebration</h3></div>
-      <div class="work-item"><h3>Switch On</h3></div>
-      <div class="work-item">
-        <h3>Colors and Forms</h3>
-        <p class="note">Ongoing modular project — dedicated page</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Jazz -->
-  <section class="work-category">
-    <h2>Jazz & Improvised Music</h2>
-    <div class="work-list">
-      <div class="work-item"><h3>Itaka</h3></div>
-      <div class="work-item"><h3>Preciosa y el sueño</h3></div>
-      <div class="work-item"><h3>Lo peor ha pasado</h3></div>
-    </div>
-  </section>
-
-  <!-- Large Ensemble -->
-  <section class="work-category">
-    <h2>Large Ensemble & Big Band</h2>
-    <div class="work-list">
-      <div class="work-item"><h3>Maas Tangos</h3></div>
-      <div class="work-item"><h3>Ceramique (Big Band version)</h3></div>
-    </div>
-  </section>
-
-  <!-- Small Ensemble -->
-  <section class="work-category">
-    <h2>Small Ensemble</h2>
-    <div class="work-list">
-      <div class="work-item"><h3>Insomnia</h3></div>
-    </div>
-  </section>
-
-  <!-- Solo -->
-  <section class="work-category">
-    <h2>Solo Works</h2>
-    <div class="work-list">
-      <div class="work-item"><h3>The Great Wave — Solo Drums</h3></div>
-    </div>
   </section>
 
 </main>
