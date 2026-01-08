@@ -587,3 +587,103 @@ main {
 .contact-links a:hover {
   border-bottom: 1px solid #111;
 }
+/* =========================
+   AGENDA PAGE
+========================= */
+
+.agenda {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.agenda-hero {
+  margin-bottom: 80px;
+}
+
+.agenda-hero h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.agenda-hero p {
+  max-width: 720px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.agenda-section {
+  margin-bottom: 80px;
+}
+
+.agenda-section h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Agenda item */
+.agenda-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+/* Date block */
+.agenda-date {
+  text-align: center;
+  font-family: inherit;
+}
+
+.agenda-date .day {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.agenda-date .month {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+}
+
+.agenda-date .year {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.agenda-date.muted {
+  opacity: 0.5;
+}
+
+/* Info */
+.agenda-info h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.agenda-info .role {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.agenda-info .location {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Past section */
+.agenda-section.past {
+  opacity: 0.85;
+}
