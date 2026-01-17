@@ -687,3 +687,32 @@ main {
 .agenda-section.past {
   opacity: 0.85;
 }
+
+/* ======================
+   BLOG PAGE
+====================== */
+.blog {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.blog-header h1 {
+  font-size: 3rem;
+}
+
+.blog-entry {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-entry h2 a {
+  text-decoration: none;
+  color: #111;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  color: #777;
+}
