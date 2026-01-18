@@ -716,3 +716,6 @@ main {
   font-size: 0.85rem;
   color: #777;
 }
+.project-hero--end .project-hero-image img {
+  max-height: 50vh;
+}
