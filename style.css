@@ -729,3 +729,78 @@ main {
 .project-hero--end .project-hero-image img {
   max-height: 50vh;
 }
+/* COLORS AND FORMS PAGE */
+
+body.colors-forms {
+  background-color: #111;
+  color: #eee;
+}
+
+.cf-hero {
+  min-height: 100vh;
+  background-image: url("assets/images/colors-and-forms-score.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cf-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cf-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cf-subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.cf-content {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.cf-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cf-call {
+  margin: 4rem 0;
+  padding: 2rem;
+  border-left: 3px solid #aaa;
+}
+
+.cf-mail a {
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.cf-audio h2 {
+  margin-bottom: 2rem;
+}
+
+.cf-audio-item {
+  margin-bottom: 2rem;
+}
+
+.cf-audio-item audio {
+  width: 100%;
+}
+
+.placeholder {
+  opacity: 0.6;
+  font-style: italic;
+}
