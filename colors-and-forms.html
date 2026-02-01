@@ -6,69 +6,88 @@
   <title>Colors and Forms — Mario Calzada</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-    <!-- Navigation -->
-     <header>
-        <nav class="navbar">
-            <div class="logo"><a href="index.html">Mario Calzada</a></div>
-            <ul class="nav-links">
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Media Kit</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Newsletter</a></li>
-            </ul>
-        </nav>
-<body>
 
-<header class="project-hero">
-  <h1>Colors and Forms</h1>
-  <p class="project-subtitle">An open, evolving project on interpretation, form and agency</p>
+<body class="colors-forms">
+
+<!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Mario Calzada</a></div>
+    <ul class="nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="agenda.html">Agenda</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="project-page">
+<!-- HERO WITH SCORE BACKGROUND -->
+<section class="cf-hero">
+  <div class="cf-overlay">
+    <h1>Colors and Forms</h1>
+    <p class="cf-subtitle">
+      An open score for solo performer<br>
+      interpretation, agency, and form
+    </p>
+  </div>
+</section>
 
-  <!-- Explanation -->
-  <section class="project-intro">
+<main class="cf-content">
+
+  <!-- ARTISTIC STATEMENT -->
+  <section class="cf-text">
     <p>
-      <em>Colors and Forms</em> is an ongoing compositional project conceived as a modular score
-      adaptable to different instruments and performers. Each interpretation reflects the
-      performer’s musical identity, decision-making and relationship to form.
+      <em>Colors and Forms</em> is conceived as an open, evolving work for solo performer.
+      The piece is a homage to <strong>Luciano Berio’s Sequenzas</strong>, and in particular
+      to their radical redefinition of virtuosity, form, and instrumental identity.
+    </p>
+
+    <p>
+      At the same time, this work attempts to move forward on an
+      <strong>improvisatory level</strong>: not by rejecting structure, but by internalizing
+      compositional knowledge and transforming it into a flexible framework capable of
+      generating an <em>infinite number of high-level realizations</em>.
+    </p>
+
+    <p>
+      Each performance is understood as a singular negotiation between material,
+      performer, and moment. No interpretation is definitive.
     </p>
   </section>
 
-  <!-- Score download -->
-  <section class="project-section">
-    <h2>Score</h2>
-    <p>The score is available for performers interested in developing their own interpretation.</p>
-    <a href="assets/scores/colors-and-forms.pdf" class="btn" target="_blank">Download score (PDF)</a>
+  <!-- CALL TO ACTION -->
+  <section class="cf-call">
+    <p>
+      Performers interested in realizing <em>Colors and Forms</em> are invited to contact me
+      directly. The score is shared individually, and each performance is developed
+      in dialogue with the composer.
+    </p>
+
+    <p class="cf-mail">
+      <a href="mailto:info@mariocalzada.com">info@mariocalzada.com</a>
+    </p>
   </section>
 
-  <!-- Instruments -->
-  <section class="project-section">
-    <h2>Interpretations</h2>
+  <!-- AUDIO PERFORMANCES -->
+  <section class="cf-audio">
+    <h2>Performances</h2>
 
-    <div class="project-grid">
-
-      <a href="colors-and-forms-viola.html" class="project-card">
-        <div class="project-image">
-          <img src="assets/projects/colors-forms-viola.jpg" alt="Colors and Forms — Viola">
-        </div>
-        <div class="project-content">
-          <h3>Viola</h3>
-          <p>Individual interpretation and sound approach</p>
-        </div>
-      </a>
-
-      <!-- Future instruments -->
-      <div class="project-card placeholder">
-        <h3>More instruments coming</h3>
-      </div>
-
+    <div class="cf-audio-item">
+      <p><strong>Emlyn Stam</strong> — first realization</p>
+      <audio controls>
+        <source src="assets/audio/colors-and-forms-emlyn-stam.mp3" type="audio/mpeg">
+      </audio>
     </div>
+
+    <!-- Future performances -->
+    <div class="cf-audio-item placeholder">
+      <p>Further performances forthcoming</p>
+    </div>
+
   </section>
 
 </main>
