@@ -822,3 +822,35 @@ body.colors-forms {
   display: block;
   border-radius: 2px; /* subtle, optional */
 }
+/* COMPOSITION HERO */
+
+.composition-hero {
+  position: relative;
+  height: 70vh;
+  background-image: url("assets/images/composition-projects1.jpeg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(
+    0% 0%,
+    100% 3%,
+    97% 88%,
+    60% 95%,
+    0% 85%
+  );
+}
+
+.composition-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+}
+
+.composition-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
