@@ -804,24 +804,7 @@ body.colors-forms {
   opacity: 0.6;
   font-style: italic;
 }
-/* COMPOSITION PROJECTS */
 
-.composition-hero {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
-
-.composition-hero-image {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.composition-hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 2px; /* subtle, optional */
-}
 /* COMPOSITION HERO */
 
 .composition-hero {
