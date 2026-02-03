@@ -898,3 +898,79 @@ body.colors-forms {
   font-size: 1.1rem;
   max-width: 600px;
 }
+/* MEDIA PAGE */
+
+.media-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.media-intro {
+  margin-bottom: 4rem;
+}
+
+.media-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.media-intro p {
+  max-width: 600px;
+  color: #555;
+}
+
+/* SECTIONS */
+
+.media-section {
+  margin-bottom: 5rem;
+}
+
+.media-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* VIDEO GRID */
+
+.media-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.media-video figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* PHOTO GRID */
+
+.media-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.media-photo-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+}
