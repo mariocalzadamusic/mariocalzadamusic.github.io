@@ -976,3 +976,90 @@ body.colors-forms {
   object-fit: cover;
   display: block;
 }
+/* PRESS PAGE */
+
+.press-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.press-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.press-hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.press-hero blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #222;
+}
+
+.press-section {
+  margin-bottom: 4rem;
+}
+
+.press-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.press-links {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 3rem;
+}
+
+.press-links li {
+  margin-bottom: 0.8rem;
+}
+
+.press-links a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid transparent;
+}
+
+.press-links a:hover {
+  border-color: #000;
+}
+
+.press-downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.press-downloads a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.press-downloads a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .press-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .press-links {
+    columns: 1;
+  }
+}
