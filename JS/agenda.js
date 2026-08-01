@@ -1,13 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const today = new Date();
 
-  document.querySelectorAll('.agenda-item').forEach(item => {
+  const upcomingContainer = document.getElementById("upcoming-events");
+  const pastContainer = document.getElementById("past-events");
+
+  const events = document.querySelectorAll(".agenda-item");
+
+  events.forEach(item => {
+
     const eventDate = new Date(item.dataset.date);
 
     if (eventDate < today) {
-      document.getElementById('past').appendChild(item);
+
+      pastContainer.appendChild(item);
+
     } else {
-      document.getElementById('upcoming').appendChild(item);
+
+      upcomingContainer.appendChild(item);
+
     }
+
   });
+
 });
