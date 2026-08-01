@@ -1061,112 +1061,245 @@ body.colors-forms {
    ELECTRONICS PROJECT PAGE
    ========================= */
 
-
 .electronic-background {
 
+    position: relative;
+    overflow: hidden;
+
     background:
-    radial-gradient(circle at 20% 20%, rgba(120, 90, 255, 0.25), transparent 35%),
-    radial-gradient(circle at 80% 30%, rgba(0, 220, 255, 0.18), transparent 35%),
-    radial-gradient(circle at 50% 80%, rgba(255, 80, 180, 0.12), transparent 40%);
+        radial-gradient(circle at 15% 20%, rgba(110,70,255,.35), transparent 30%),
+        radial-gradient(circle at 80% 15%, rgba(0,220,255,.28), transparent 30%),
+        radial-gradient(circle at 60% 85%, rgba(255,80,180,.18), transparent 40%),
+        #050505;
+
+    background-size: 220% 220%;
+    animation: ambientMove 18s ease infinite;
 
     min-height: 100vh;
-
-    padding-top: 80px;
-    padding-bottom: 120px;
-
+    padding: 100px 0;
     border-radius: 20px;
+}
+
+
+/* Animated background */
+
+@keyframes ambientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 
 }
 
 
+/* Main container */
+
+.electronics-page {
+
+    max-width: 950px;
+    margin: auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+/* Header */
+
+.electronics-header {
+
+    margin-bottom: 90px;
+
+}
 
 .electronics-header h1 {
 
-    font-size: 5rem;
-    font-weight: 300;
-    letter-spacing: -3px;
+    font-size: 6rem;
+    font-weight: 200;
+    letter-spacing: -4px;
+    margin-bottom: 15px;
 
     background: linear-gradient(
         90deg,
         #ffffff,
-        #b7c8ff,
-        #8ef6ff
+        #99c6ff,
+        #75f7ff,
+        #d59bff
     );
+
+    background-size: 300%;
 
     -webkit-background-clip: text;
     color: transparent;
 
-}
+    animation: titleGlow 10s linear infinite;
 
-
-
-.electronics-header .subtitle {
-
-    color: rgba(255,255,255,0.75);
+    text-shadow:
+        0 0 15px rgba(150,200,255,.20),
+        0 0 35px rgba(120,90,255,.15);
 
 }
 
 
+@keyframes titleGlow {
+
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 300%;
+    }
+
+}
+
+
+.subtitle {
+
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #d6ddff;
+    max-width: 700px;
+
+}
+
+
+/* Decorative signal line */
+
+.signal {
+
+    width: 220px;
+    height: 2px;
+
+    margin: 45px 0 70px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #00f7ff,
+        #9b6dff,
+        transparent
+    );
+
+    background-size: 300%;
+
+    animation: signalMove 4s linear infinite;
+
+}
+
+
+@keyframes signalMove {
+
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 300%;
+    }
+
+}
+
+
+/* Text */
 
 .electronics-text {
 
-    color: rgba(255,255,255,0.9);
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #d8e3ff;
+
+    margin-bottom: 90px;
+
+}
+
+.electronics-text p {
+
+    margin-bottom: 35px;
 
 }
 
 
+/* Section titles */
 
 .electronics-recordings h2,
 .electronics-tools h2 {
 
-    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+
+    margin-bottom: 45px;
 
 }
 
 
+/* Cards */
 
 .electronic-piece {
 
-    background: rgba(255,255,255,0.06);
+    position: relative;
+    overflow: hidden;
 
-    backdrop-filter: blur(10px);
+    padding: 40px;
 
-    padding: 35px;
+    margin-bottom: 45px;
 
-    border-radius: 18px;
+    border-radius: 22px;
 
-    margin-bottom: 40px;
+    background: rgba(255,255,255,.05);
 
-    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(18px);
 
-    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.45),
+        0 0 40px rgba(100,120,255,.08);
+
+    transition: .35s;
 
 }
-
-
 
 .electronic-piece:hover {
 
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.55),
+        0 0 80px rgba(0,220,255,.22);
 
 }
-
 
 
 .electronic-piece h3 {
 
+    font-size: 1.45rem;
+    font-weight: 300;
+
     color: white;
 
-}
+    margin-bottom: 20px;
 
+}
 
 
 .electronic-piece p {
 
-    color: rgba(255,255,255,0.7);
+    color: #cfdcff;
+    margin-top: 20px;
+    line-height: 1.8;
 
 }
-
 
 
 .electronic-piece audio {
@@ -1176,9 +1309,121 @@ body.colors-forms {
 }
 
 
+/* Tools */
 
 .electronics-tools {
 
-    color: rgba(255,255,255,0.8);
+    margin-top: 90px;
+    padding-top: 60px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    color: #d5e0ff;
+    line-height: 1.8;
+
+}
+
+
+/* Floating blobs */
+
+.blob {
+
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(130px);
+    opacity: .18;
+    pointer-events: none;
+
+}
+
+.blob1 {
+
+    width: 300px;
+    height: 300px;
+
+    background: #7c5cff;
+
+    top: 120px;
+    left: -100px;
+
+    animation: float1 14s ease-in-out infinite;
+
+}
+
+.blob2 {
+
+    width: 250px;
+    height: 250px;
+
+    background: #00d5ff;
+
+    right: -80px;
+    top: 500px;
+
+    animation: float2 18s ease-in-out infinite;
+
+}
+
+.blob3 {
+
+    width: 220px;
+    height: 220px;
+
+    background: #ff5bc5;
+
+    bottom: 120px;
+    left: 45%;
+
+    animation: float3 16s ease-in-out infinite;
+
+}
+
+
+@keyframes float1 {
+
+    50% {
+        transform: translate(60px,40px);
+    }
+
+}
+
+@keyframes float2 {
+
+    50% {
+        transform: translate(-40px,60px);
+    }
+
+}
+
+@keyframes float3 {
+
+    50% {
+        transform: translate(20px,-50px);
+    }
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .electronics-header h1 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .subtitle {
+
+        font-size: 1.15rem;
+
+    }
+
+    .electronic-piece {
+
+        padding: 25px;
+
+    }
 
 }
