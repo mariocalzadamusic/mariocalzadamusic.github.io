@@ -1057,3 +1057,127 @@ body.colors-forms {
     columns: 1;
   }
 }
+/* ======================
+   ELECTRONICS PROJECT
+====================== */
+
+
+.electronics-page {
+
+max-width: 900px;
+margin: 80px auto;
+padding: 0 20px;
+
+}
+
+
+
+.electronics-header {
+
+margin-bottom: 90px;
+
+}
+
+
+.electronics-header h1 {
+
+font-size: 4rem;
+font-weight: 400;
+letter-spacing: -2px;
+margin-bottom: 20px;
+
+}
+
+
+
+.electronics-header .subtitle {
+
+font-size: 1.4rem;
+line-height: 1.6;
+max-width: 650px;
+
+}
+
+
+
+.electronics-text {
+
+font-size: 1.15rem;
+line-height: 1.8;
+margin-bottom: 100px;
+
+}
+
+
+
+.electronics-text p {
+
+margin-bottom: 45px;
+
+}
+
+
+
+.electronics-recordings h2,
+.electronics-tools h2 {
+
+font-size: 2rem;
+font-weight: 400;
+margin-bottom: 50px;
+
+}
+
+
+
+.electronic-piece {
+
+padding-bottom: 60px;
+margin-bottom: 60px;
+border-bottom: 1px solid #ddd;
+
+}
+
+
+
+.electronic-piece h3 {
+
+font-size: 1.5rem;
+font-weight: 400;
+margin-bottom: 20px;
+
+}
+
+
+
+.electronic-piece audio {
+
+width: 100%;
+margin-bottom: 15px;
+
+}
+
+
+
+.electronic-piece p {
+
+line-height: 1.6;
+
+}
+
+
+
+.electronics-tools {
+
+margin-top: 80px;
+padding-top: 50px;
+border-top: 1px solid #ddd;
+
+}
+
+
+.electronics-tools p {
+
+font-size: 1.1rem;
+line-height: 1.8;
+
+}
