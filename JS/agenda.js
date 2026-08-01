@@ -2,23 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const today = new Date();
 
-  const upcomingContainer = document.getElementById("upcoming-events");
-  const pastContainer = document.getElementById("past-events");
+  const upcoming = document.getElementById("upcoming-events");
+  const past = document.getElementById("past-events");
 
   const events = document.querySelectorAll(".agenda-item");
 
-  events.forEach(item => {
+  events.forEach(event => {
 
-    const eventDate = new Date(item.dataset.date);
+    const date = new Date(event.getAttribute("data-date"));
 
-    if (eventDate < today) {
+    console.log("Event:", event.querySelector("h3").innerText, date);
 
-      pastContainer.appendChild(item);
-
+    if (date < today) {
+      past.appendChild(event);
     } else {
-
-      upcomingContainer.appendChild(item);
-
+      upcoming.appendChild(event);
     }
 
   });
