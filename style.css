@@ -1057,34 +1057,44 @@ body.colors-forms {
     columns: 1;
   }
 }
-/* ======================
-   ELECTRONICS PROJECT
-====================== */
+/* =========================
+   ELECTRONICS PROJECT PAGE
+   ========================= */
 
 
-.electronics-page {
+.electronic-background {
 
-max-width: 900px;
-margin: 80px auto;
-padding: 0 20px;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(120, 90, 255, 0.25), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(0, 220, 255, 0.18), transparent 35%),
+    radial-gradient(circle at 50% 80%, rgba(255, 80, 180, 0.12), transparent 40%);
+
+    min-height: 100vh;
+
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    border-radius: 20px;
 
 }
 
-
-
-.electronics-header {
-
-margin-bottom: 90px;
-
-}
 
 
 .electronics-header h1 {
 
-font-size: 4rem;
-font-weight: 400;
-letter-spacing: -2px;
-margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: -3px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #b7c8ff,
+        #8ef6ff
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
 
 }
 
@@ -1092,9 +1102,7 @@ margin-bottom: 20px;
 
 .electronics-header .subtitle {
 
-font-size: 1.4rem;
-line-height: 1.6;
-max-width: 650px;
+    color: rgba(255,255,255,0.75);
 
 }
 
@@ -1102,17 +1110,7 @@ max-width: 650px;
 
 .electronics-text {
 
-font-size: 1.15rem;
-line-height: 1.8;
-margin-bottom: 100px;
-
-}
-
-
-
-.electronics-text p {
-
-margin-bottom: 45px;
+    color: rgba(255,255,255,0.9);
 
 }
 
@@ -1121,9 +1119,7 @@ margin-bottom: 45px;
 .electronics-recordings h2,
 .electronics-tools h2 {
 
-font-size: 2rem;
-font-weight: 400;
-margin-bottom: 50px;
+    color: white;
 
 }
 
@@ -1131,9 +1127,27 @@ margin-bottom: 50px;
 
 .electronic-piece {
 
-padding-bottom: 60px;
-margin-bottom: 60px;
-border-bottom: 1px solid #ddd;
+    background: rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(10px);
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    margin-bottom: 40px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.electronic-piece:hover {
+
+    transform: translateY(-5px);
 
 }
 
@@ -1141,18 +1155,7 @@ border-bottom: 1px solid #ddd;
 
 .electronic-piece h3 {
 
-font-size: 1.5rem;
-font-weight: 400;
-margin-bottom: 20px;
-
-}
-
-
-
-.electronic-piece audio {
-
-width: 100%;
-margin-bottom: 15px;
+    color: white;
 
 }
 
@@ -1160,7 +1163,15 @@ margin-bottom: 15px;
 
 .electronic-piece p {
 
-line-height: 1.6;
+    color: rgba(255,255,255,0.7);
+
+}
+
+
+
+.electronic-piece audio {
+
+    width: 100%;
 
 }
 
@@ -1168,16 +1179,6 @@ line-height: 1.6;
 
 .electronics-tools {
 
-margin-top: 80px;
-padding-top: 50px;
-border-top: 1px solid #ddd;
-
-}
-
-
-.electronics-tools p {
-
-font-size: 1.1rem;
-line-height: 1.8;
+    color: rgba(255,255,255,0.8);
 
 }
