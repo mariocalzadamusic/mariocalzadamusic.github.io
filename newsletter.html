@@ -33,6 +33,7 @@
 <li><a href="blog.html">Blog</a></li>
 <li><a href="press.html">Press</a></li>
 <li><a href="media.html">Media Kit</a></li>
+<li><a href="newsletter.html">Newsletter</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 
@@ -42,8 +43,8 @@
 
 
 
-<main class="newsletter-page">
 
+<main class="newsletter-page">
 
 
 <section class="newsletter-hero">
@@ -51,7 +52,7 @@
 <h1>Newsletter</h1>
 
 <p>
-Occasional letters about music, concerts, new projects,
+Occasional letters about concerts, new music,
 electronic explorations and artistic research.
 </p>
 
@@ -61,36 +62,37 @@ electronic explorations and artistic research.
 
 
 
-<section class="newsletter-signup">
-
+<section class="newsletter-subscribe">
 
 <h2>Stay updated</h2>
 
 <p>
-I usually send a few updates per year. No spam, only new music,
-performances and ideas.
+I send a few updates per year with new projects,
+recordings and performances.
 </p>
 
 
-
-<!-- SUBSTACK / BUTTONDOWN EMBED GOES HERE -->
-
-<div class="newsletter-box">
+<form id="subscribe-form">
 
 <input 
-type="email" 
-placeholder="Your email address">
+type="email"
+id="email"
+placeholder="Your email address"
+required>
 
 
-<button>
+<button type="submit">
 Subscribe
 </button>
 
-</div>
+
+</form>
+
+
+<p id="message"></p>
 
 
 </section>
-
 
 
 
@@ -105,22 +107,26 @@ Subscribe
 
 <article class="newsletter-card">
 
-<p class="newsletter-date">
+<span>
 August 2026
-</p>
+</span>
+
 
 <h3>
-New electronic explorations
+Entering electronic systems
 </h3>
 
+
 <p>
-Exploring synthesis, improvisation and electronic systems
-with Ableton Live, Max/MSP and MIDI controllers.
+A first exploration of synthesis,
+MIDI controllers, Ableton Live and Max/MSP.
 </p>
 
+
 <a href="#">
-Read more →
+Read letter →
 </a>
+
 
 </article>
 
@@ -130,26 +136,28 @@ Read more →
 
 <article class="newsletter-card">
 
-<p class="newsletter-date">
+<span>
 June 2026
-</p>
+</span>
+
 
 <h3>
 Day of the Composer
 </h3>
 
+
 <p>
-A reflection on composition, performance and new ways
-of bringing music into public spaces.
+Reflections on composition, performance
+and public spaces.
 </p>
 
+
 <a href="#">
-Read more →
+Read letter →
 </a>
 
+
 </article>
-
-
 
 
 
@@ -170,6 +178,55 @@ Read more →
 
 
 
-</body>
 
+
+<script>
+
+const form=document.getElementById("subscribe-form");
+
+form.addEventListener("submit", async(e)=>{
+
+e.preventDefault();
+
+
+const email=document.getElementById("email").value;
+
+
+const response=await fetch(
+"https://YOUR-SERVER.com/subscribe",
+{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+email:email
+})
+}
+);
+
+
+if(response.ok){
+
+document.getElementById("message").innerHTML=
+"Thank you for subscribing!";
+
+}
+
+else{
+
+document.getElementById("message").innerHTML=
+"Something went wrong.";
+
+}
+
+
+});
+
+
+</script>
+
+
+
+</body>
 </html>
