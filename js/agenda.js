@@ -1,24 +1,117 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const today = new Date();
+  const upcomingContainer = document.getElementById("upcoming-events");
+  const pastContainer = document.getElementById("past-events");
 
-  const upcoming = document.getElementById("upcoming-events");
-  const past = document.getElementById("past-events");
+  if (!upcomingContainer || !pastContainer) {
+    console.error("Agenda containers not found.");
+    return;
+  }
 
-  const events = document.querySelectorAll(".agenda-item");
+
+  /*
+   * Convert YYYY-MM-DD into a LOCAL date.
+   * This avoids timezone problems with new Date("YYYY-MM-DD").
+   */
+  function parseLocalDate(dateString) {
+
+    const [year, month, day] = dateString.split("-").map(Number);
+
+    return new Date(year, month - 1, day);
+
+  }
+
+
+  /*
+   * Today at midnight.
+   * This means an event happening TODAY
+   * remains in Upcoming for the whole day.
+   */
+  const now = new Date();
+
+  const today = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate()
+  );
+
+
+  /*
+   * Get all events currently in the Upcoming container.
+   */
+  const events = Array.from(
+    upcomingContainer.querySelectorAll(".agenda-item")
+  );
+
+
+  /*
+   * Separate events into Upcoming and Past.
+   */
+  const upcoming = [];
+  const past = [];
+
 
   events.forEach(event => {
 
-    const date = new Date(event.getAttribute("data-date"));
+    const dateString = event.dataset.date;
 
-    console.log("Event:", event.querySelector("h3").innerText, date);
+    if (!dateString) {
+      console.warn("Event has no data-date:", event);
+      return;
+    }
 
-    if (date < today) {
-      past.appendChild(event);
+
+    const eventDate = parseLocalDate(dateString);
+
+
+    if (eventDate >= today) {
+
+      upcoming.push({
+        element: event,
+        date: eventDate
+      });
+
     } else {
-      upcoming.appendChild(event);
+
+      past.push({
+        element: event,
+        date: eventDate
+      });
+
     }
 
   });
+
+
+  /*
+   * UPCOMING:
+   * Soonest event first.
+   */
+  upcoming.sort((a, b) => {
+    return a.date - b.date;
+  });
+
+
+  /*
+   * PAST:
+   * Most recent event first.
+   */
+  past.sort((a, b) => {
+    return b.date - a.date;
+  });
+
+
+  /*
+   * Put the events into their correct containers.
+   */
+  upcoming.forEach(event => {
+    upcomingContainer.appendChild(event.element);
+  });
+
+
+  past.forEach(event => {
+    pastContainer.appendChild(event.element);
+  });
+
 
 });
