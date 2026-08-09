@@ -64,7 +64,9 @@ electronic explorations and artistic research.
 
 <section class="newsletter-subscribe">
 
+
 <h2>Stay updated</h2>
+
 
 <p>
 I send a few updates per year with new projects,
@@ -72,7 +74,10 @@ recordings and performances.
 </p>
 
 
+
+
 <form id="subscribe-form">
+
 
 <input 
 type="email"
@@ -81,18 +86,49 @@ placeholder="Your email address"
 required>
 
 
+
+
+<label class="consent">
+
+<input 
+type="checkbox"
+id="consent"
+required>
+
+I agree to receive occasional newsletters from Mario Calzada.
+I can unsubscribe at any time.
+
+</label>
+
+
+
+
 <button type="submit">
 Subscribe
 </button>
 
 
+
 </form>
+
+
+
+<p class="privacy-note">
+
+Your email address is used only for this newsletter.
+You can request removal at any time.
+
+</p>
+
 
 
 <p id="message"></p>
 
 
+
 </section>
+
+
 
 
 
@@ -105,16 +141,21 @@ Subscribe
 
 
 
+
+
 <article class="newsletter-card">
+
 
 <span>
 August 2026
 </span>
 
 
+
 <h3>
 Entering electronic systems
 </h3>
+
 
 
 <p>
@@ -123,9 +164,11 @@ MIDI controllers, Ableton Live and Max/MSP.
 </p>
 
 
+
 <a href="#">
 Read letter →
 </a>
+
 
 
 </article>
@@ -134,16 +177,21 @@ Read letter →
 
 
 
+
+
 <article class="newsletter-card">
+
 
 <span>
 June 2026
 </span>
 
 
+
 <h3>
 Day of the Composer
 </h3>
+
 
 
 <p>
@@ -152,12 +200,16 @@ and public spaces.
 </p>
 
 
+
 <a href="#">
 Read letter →
 </a>
 
 
+
 </article>
+
+
 
 
 
@@ -165,7 +217,11 @@ Read letter →
 
 
 
+
+
 </main>
+
+
 
 
 
@@ -180,53 +236,135 @@ Read letter →
 
 
 
+
 <script>
 
-const form=document.getElementById("subscribe-form");
 
-form.addEventListener("submit", async(e)=>{
+const form = document.getElementById("subscribe-form");
+
+
+
+form.addEventListener("submit", async (e)=>{
+
 
 e.preventDefault();
 
 
-const email=document.getElementById("email").value;
+
+const email =
+document.getElementById("email").value;
 
 
-const response=await fetch(
-"https://YOUR-SERVER.com/subscribe",
-{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify({
-email:email
-})
+
+const consent =
+document.getElementById("consent").checked;
+
+
+
+
+if(!consent){
+
+
+document.getElementById("message").innerHTML =
+"Please accept the newsletter conditions.";
+
+
+return;
+
+
 }
+
+
+
+
+try {
+
+
+
+const response = await fetch(
+
+"https://YOUR-SERVER.com/subscribe",
+
+{
+
+
+method:"POST",
+
+
+headers:{
+
+
+"Content-Type":"application/json"
+
+
+},
+
+
+body:JSON.stringify({
+
+email:email
+
+})
+
+
+}
+
+
 );
+
+
+
 
 
 if(response.ok){
 
-document.getElementById("message").innerHTML=
-"Thank you for subscribing!";
+
+document.getElementById("message").innerHTML =
+
+"Thank you for subscribing! Please check your email to confirm.";
+
 
 }
+
 
 else{
 
-document.getElementById("message").innerHTML=
-"Something went wrong.";
+
+document.getElementById("message").innerHTML =
+
+"Something went wrong. Please try again.";
+
 
 }
 
 
+
+}
+
+
+catch(error){
+
+
+document.getElementById("message").innerHTML =
+
+"Unable to connect. Please try again later.";
+
+
+}
+
+
+
 });
+
 
 
 </script>
 
 
 
+
+
+
 </body>
+
 </html>
